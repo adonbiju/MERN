@@ -2,9 +2,8 @@ import React ,{useState}  from 'react';
 import { Link ,useNavigate} from 'react-router-dom';
 import '../App.css';
 import axios from 'axios';
-
 function CreateBook() {
-  
+
   const navigate= useNavigate()
   const [title,settitle]=useState('')
   const [isbn,setisbn]=useState('')
@@ -12,7 +11,7 @@ function CreateBook() {
   const [description,setdescription]=useState('')
   const [published_date,setpublished_date]=useState('')
   const [publisher,setpublisher]=useState('')
-  
+
   const handlesubmit=(e)=>{
     e.preventDefault() 
     const data = {
@@ -26,7 +25,7 @@ function CreateBook() {
   
     axios.post('http://localhost:8082/api/books', data)
   .then(function (response) {
-    console.log(response);
+   // console.log(response);
     navigate('/')
   })
   .catch(function (error) {
@@ -58,6 +57,7 @@ function CreateBook() {
                 className='form-control'
                 value={title}
                 onChange={(e)=>settitle(e.target.value)}
+                required
               />
             </div>
             <br />
@@ -70,6 +70,7 @@ function CreateBook() {
                 className='form-control'
                 value={isbn}
                 onChange={(e)=>setisbn(e.target.value)}
+                required
               />
             </div>
 
@@ -81,6 +82,7 @@ function CreateBook() {
                 className='form-control'
                 value={author}
                 onChange={(e)=>setauthor(e.target.value)}
+                required
               />
             </div>
 
@@ -92,6 +94,7 @@ function CreateBook() {
                 className='form-control'
                 value={description}
                 onChange={(e)=>setdescription(e.target.value)}
+                required
               />
             </div>
 
@@ -103,6 +106,7 @@ function CreateBook() {
                 className='form-control'
                 value={published_date}
                 onChange={(e)=>setpublished_date(e.target.value)}
+                required
               />
             </div>
             <div className='form-group'>
@@ -113,6 +117,7 @@ function CreateBook() {
                 className='form-control'
                 value={publisher}
                 onChange={(e)=>setpublisher(e.target.value)}
+                required
               />
             </div>
 
