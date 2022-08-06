@@ -47,7 +47,7 @@ function ShowBookDetails() {
         </div>
         <br />
         <div className="col-md-8 m-auto">
-          <h1 className="display-4 text-center">Book's Record</h1>
+          <h1 className="display-4 text-center">Book Details</h1>
           <p className="lead text-center">
               View Book's Info
           </p>
