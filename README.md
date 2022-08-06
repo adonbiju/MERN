@@ -1,8 +1,8 @@
 # MERN
-## CRUD Operation using MERN Stack
+ CRUD Operation using MERN Stack
 
 # To Running the frontend and backend
-## Follow the steps below to run both the frontend and backend of our MERN stack example.
+Follow the steps below to run both the frontend and backend of our MERN stack example.
 
 # To Run the server
 
