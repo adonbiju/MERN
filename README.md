@@ -35,5 +35,5 @@ Show any book’s info: http://localhost:3000/show-book/:id
 
 Update a book’s info: http://localhost:3000/edit-book/:id
 
-![EditBook](/Demo/Edit%20Book.png)
+![EditBook](/Demo/EditBook.png)
 
